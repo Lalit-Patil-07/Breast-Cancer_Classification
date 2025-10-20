@@ -1,4 +1,4 @@
-# Breast Cancer Classification with Data Balancing
+# Breast Cancer Classification
 
 This project provides a complete machine learning pipeline for classifying breast cancer as Malignant (M) or Benign (B) using the Wisconsin Breast Cancer Dataset.
 
