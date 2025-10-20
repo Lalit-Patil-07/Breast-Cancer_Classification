@@ -1,0 +1,124 @@
+{
+    "training_date": "2025-10-20 08:43:35",
+    "model_name": "Logistic Regression",
+    "balancing_technique": "Borderline SMOTE",
+    "optimal_threshold": 0.6,
+    "dataset_info": {
+        "total_samples": 569,
+        "n_features": 30,
+        "feature_names": [
+            "radius_mean",
+            "texture_mean",
+            "perimeter_mean",
+            "area_mean",
+            "smoothness_mean",
+            "compactness_mean",
+            "concavity_mean",
+            "concave points_mean",
+            "symmetry_mean",
+            "fractal_dimension_mean",
+            "radius_se",
+            "texture_se",
+            "perimeter_se",
+            "area_se",
+            "smoothness_se",
+            "compactness_se",
+            "concavity_se",
+            "concave points_se",
+            "symmetry_se",
+            "fractal_dimension_se",
+            "radius_worst",
+            "texture_worst",
+            "perimeter_worst",
+            "area_worst",
+            "smoothness_worst",
+            "compactness_worst",
+            "concavity_worst",
+            "concave points_worst",
+            "symmetry_worst",
+            "fractal_dimension_worst"
+        ],
+        "benign_cases": 357,
+        "malignant_cases": 212,
+        "imbalance_ratio": 1.6839622641509433
+    },
+    "training_data": {
+        "train_samples": 455,
+        "test_samples": 114,
+        "train_balanced_samples": 570
+    },
+    "performance_metrics": {
+        "accuracy": 0.9736842105263158,
+        "precision": 0.975609756097561,
+        "recall": 0.9523809523809523,
+        "f1_score": 0.963855421686747,
+        "false_negatives": 2,
+        "false_positives": 1,
+        "true_positives": 40,
+        "true_negatives": 71
+    },
+    "balancing_comparison": {
+        "Baseline (No Balancing)": {
+            "accuracy": 0.9736842105263158,
+            "recall": 0.9285714285714286,
+            "false_negatives": 3
+        },
+        "Class Weights": {
+            "accuracy": 0.9736842105263158,
+            "recall": 0.9285714285714286,
+            "false_negatives": 3
+        },
+        "Random Oversampling": {
+            "accuracy": 0.956140350877193,
+            "recall": 0.9047619047619048,
+            "false_negatives": 4
+        },
+        "SMOTE": {
+            "accuracy": 0.9736842105263158,
+            "recall": 0.9285714285714286,
+            "false_negatives": 3
+        },
+        "ADASYN": {
+            "accuracy": 0.9736842105263158,
+            "recall": 0.9285714285714286,
+            "false_negatives": 3
+        },
+        "Borderline SMOTE": {
+            "accuracy": 0.9912280701754386,
+            "recall": 0.9761904761904762,
+            "false_negatives": 1
+        },
+        "Random Undersampling": {
+            "accuracy": 0.9649122807017544,
+            "recall": 0.9285714285714286,
+            "false_negatives": 3
+        },
+        "SMOTE+Tomek": {
+            "accuracy": 0.9736842105263158,
+            "recall": 0.9285714285714286,
+            "false_negatives": 3
+        },
+        "SMOTE+ENN": {
+            "accuracy": 0.9736842105263158,
+            "recall": 0.9285714285714286,
+            "false_negatives": 3
+        }
+    },
+    "model_parameters": {
+        "C": 10,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 10000,
+        "multi_class": "deprecated",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+    }
+}
